@@ -11,8 +11,8 @@ elif args_count < 2:
 def validate_ip(ip_string):
    try:
        is_ip_valid = ipaddress.ip_address(ip_string)
-       print("The IP address '{is_ip_valid}' is valid.")
+       print("The IP address "+ ip_string +" is valid.")
    except ValueError:
-       print("The IP address '{is_ip_valid}' is not valid")
+       print("The IP address "+ ip_string +" is not valid")
 
 validate_ip(sys.argv[1])
