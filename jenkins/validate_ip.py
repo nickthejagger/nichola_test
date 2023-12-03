@@ -8,6 +8,7 @@ elif args_count < 2:
     print("You must insert the ip number")
     raise SystemExit(2)
 
+
 def validate_ip(ip_string):
    try:
        is_ip_valid = ipaddress.ip_address(ip_string)
