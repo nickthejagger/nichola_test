@@ -1,0 +1,8 @@
+auth:
+  rootPassword: "password123"
+  existingSecret: pass-mongo
+persistence:
+  existingClaim: "mongo-data"
+architecture: replicaset
+metrics:
+  enabled: true

@@ -1,0 +1,11 @@
+image:
+  tag: 1.0.0-18
+livenessProbe:
+  enabled: false
+readinessProbe:
+  enabled: false
+mongodbServer: mongo-mongodb-0.mongo-mongodb-headless.mongo.svc.cluster.local
+mongodbEnableAdmin: true
+mongodbAdminUsername: root
+mongodbAdminPassword: password123
+mongodbAuthDatabase: admin
