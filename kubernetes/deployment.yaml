@@ -8,17 +8,4 @@ spec:
       memory: 512Mi
     defaultRequest:
       memory: 256Mi
-    type: Container
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: mongo-ui
-spec:
-  type: NodePort
-  ports:
-  - name: http
-    nodePort: 30950
-    port: 8081
-  selector:
-    name: mongo-express
+    type: Container\
